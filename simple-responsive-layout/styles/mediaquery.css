@@ -1,0 +1,36 @@
+/* original/large device */
+body {
+  max-width: 1025px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.food {
+  border: 1px solid skyblue;
+  padding: 10px;
+  border-radius: 10px;
+}
+.food img {
+  width: 100%;
+}
+
+/* medium device */
+@media screen and (min-width: 513px) and (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* small device */
+@media screen and (max-width: 512px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
